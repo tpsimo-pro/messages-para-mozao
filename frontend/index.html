@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Para a Ellen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=EB+Garamond:ital,wght@0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- TELA DE ENTRADA -->
+    <section id="entrada" class="tela ativa">
+      <div class="fundo-estrelas" id="estrelas"></div>
+      <div class="entrada-conteudo">
+        <p class="entrada-subtitulo">uma surpresa para</p>
+        <h1 class="entrada-nome">Ellen</h1>
+        <div class="entrada-data">
+          <span class="linha-data"></span>
+          <span>desde 20 de setembro de 2025</span>
+          <span class="linha-data"></span>
+        </div>
+        <button class="btn-revelar" id="btnRevelar">
+          <span>abrir surpresa</span>
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path d="M12 5v14M5 12l7 7 7-7" />
+          </svg>
+        </button>
+      </div>
+      <div class="vinheta"></div>
+    </section>
+
+    <!-- TELA PRINCIPAL -->
+    <section id="principal" class="tela">
+      <nav class="nav">
+        <span class="nav-logo">♡ Ellen</span>
+        <div class="nav-links">
+          <a href="#memorias-section">memórias</a>
+          <a href="#carta-section">carta</a>
+        </div>
+      </nav>
+
+      <!-- HERO -->
+      <div class="hero">
+        <div class="hero-ornamento">✦</div>
+        <p class="hero-intro">há momentos que a gente guarda</p>
+        <h2 class="hero-titulo">não na memória,<br /><em>mas na alma.</em></h2>
+        <p class="hero-dias" id="diasJuntos"></p>
+      </div>
+
+      <!-- MEMÓRIAS -->
+      <div id="memorias-section" class="memorias-wrapper">
+        <h3 class="secao-titulo"><em>nossas memórias</em></h3>
+        <div class="timeline">
+          <div class="memoria-item" data-delay="0">
+            <div class="memoria-dot">🎬</div>
+            <div class="memoria-card">
+              <span class="memoria-tag">recorrente</span>
+              <h4>O cinema</h4>
+              <p>
+                Toda vez que a gente vai ao cinema, é mais do que um filme. É
+                estar do seu lado no escuro, dividindo o mesmo momento — e isso
+                já é o suficiente.
+              </p>
+            </div>
+          </div>
+
+          <div class="memoria-item" data-delay="150">
+            <div class="memoria-dot">✝</div>
+            <div class="memoria-card">
+              <span class="memoria-tag">especial</span>
+              <h4>A quarta-feira que mudou algo</h4>
+              <p>
+                Você me mostrou que Deus e Jesus Cristo não precisam ser um
+                peso. Que existe leveza nessa fé. Foi uma das coisas mais
+                bonitas que alguém já me deu.
+              </p>
+            </div>
+          </div>
+
+          <div class="memoria-item" data-delay="300">
+            <div class="memoria-dot">☕</div>
+            <div class="memoria-card">
+              <span class="memoria-tag">manhã</span>
+              <h4>Café da manhã no Engenheiros do Café</h4>
+              <p>
+                Começar o dia assim — com você, com café, com calma — é o tipo
+                de coisa que faz a gente querer que o tempo passe mais devagar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARTA COM IA -->
+      <div id="carta-section" class="carta-wrapper">
+        <h3 class="secao-titulo"><em>uma carta só para você</em></h3>
+        <p class="carta-descricao">
+          cada vez que você clicar, uma carta nova nasce — escrita pensando em
+          você.
+        </p>
+
+        <div class="carta-container">
+          <div class="carta-papel" id="cartaPapel">
+            <div class="carta-placeholder" id="cartaPlaceholder">
+              <span>✦</span>
+              <p>clique no botão abaixo para receber sua carta</p>
+            </div>
+            <div
+              class="carta-texto"
+              id="cartaTexto"
+              style="display: none"
+            ></div>
+            <div class="carta-loading" id="cartaLoading" style="display: none">
+              <div class="loading-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <p>escrevendo para você...</p>
+            </div>
+          </div>
+          <button class="btn-carta" id="btnCarta">
+            <span id="btnCartaTexto">gerar carta</span>
+          </button>
+          <p class="carta-erro" id="cartaErro" style="display: none">
+            não consegui me conectar ao servidor. tente novamente em instantes.
+          </p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>feito com muito amor ♡</p>
+        <p class="footer-data">20 · 08 · 2025</p>
+      </footer>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
