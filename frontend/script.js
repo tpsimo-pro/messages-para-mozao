@@ -4,7 +4,7 @@
 //  backend deployado no Render.
 //  Ex: https://para-ellen-api.onrender.com
 // ============================================
-const API_URL = "https://SUA-URL-DO-RENDER.onrender.com";
+const API_URL = "https://pupuca.onrender.com";
 
 // ============================================
 //  TRANSIÇÃO DE TELAS
